@@ -166,3 +166,72 @@ for (let j = 0; j < numArray.length; j++) {
   }
 }
 */
+
+// 9.	Reverse a number
+/*
+let num=54321;
+let revNum=Number(num.toString().split('').reverse().join(''))
+
+console.log(revNum)
+*/
+
+//10.	Count digits
+/*
+let num = 23345;
+let splitNum = num.toString().split("");
+let count = 0;
+
+for (let i = 0; i < splitNum.length; i++) {
+  count++;
+}
+
+console.log(splitNum, count);
+*/
+
+//11.	Sum of digits
+/*
+let num = 12345;
+let splitNum = num.toString().split("");
+let sumDigit = 0;
+
+for (let i = 0; i <= splitNum.length; i++) {
+  sumDigit+=i;
+}
+
+console.log(splitNum, sumDigit);
+*/
+
+//12.	Check palindrome number
+/*
+let num=121;
+let revNum = Number(num.toString().split("").reverse().join(''));
+
+if(num===revNum) {
+ console.log(`${num} is the palindrome number`)
+} else {
+console.log(`${num} is not an palindrome number`)
+}
+
+console.log(num, revNum);
+*/
+
+//13.	Armstrong number
+/*
+let num = 548834;
+let revNum = num.toString().split("");
+let powerof = revNum.length;
+let armstrongNum = 0;
+
+for (let i = 0; i < revNum.length; i++) {
+  armstrongNum += Number(revNum[i]) ** powerof;
+  console.log(Number(revNum[i]) ** powerof);
+}
+
+if (num === armstrongNum) {
+  console.log(`${num} is the Armstrong number`);
+} else {
+  console.log(`${num} is not an Armstrong number`);
+}
+
+console.log(num, revNum, powerof, armstrongNum);
+*/
