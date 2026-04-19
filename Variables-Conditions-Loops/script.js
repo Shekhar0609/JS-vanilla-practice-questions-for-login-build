@@ -235,3 +235,69 @@ if (num === armstrongNum) {
 
 console.log(num, revNum, powerof, armstrongNum);
 */
+
+//14.	Swap two numbers (without temp)
+/*
+let a = 10,
+  b = 14;
+
+[a, b] = [b, a];
+
+console.log(a, b);
+*/
+
+
+
+
+//15.	Find Greatest Common Divisor (GCD)
+/*
+let firstNum = 99,
+  secondNum = 132,
+  devidasableValues = [],
+  devidasableValues2 = [],
+  nonDevidasableValues = [],
+  nonDevidasableValues2 = [];
+
+for (let i = 0; i <= firstNum; i++) {
+  console.log(i);
+  firstNum % i === 0 ? devidasableValues.push(i) : nonDevidasableValues.push(i);
+}
+
+for (let j = 0; j <= secondNum; j++) {
+  console.log(j);
+  secondNum % j === 0
+    ? devidasableValues2.push(j)
+    : nonDevidasableValues2.push(j);
+}
+
+console.log(devidasableValues, nonDevidasableValues);
+console.log(devidasableValues2, nonDevidasableValues2);
+
+let combinedDevisableValues = devidasableValues.concat(devidasableValues2);
+
+let duplicateValues = [];
+
+console.log(combinedDevisableValues);
+
+for (let k = 0; k < combinedDevisableValues.length; k++) {
+  for (let d = k + 1; d < combinedDevisableValues.length; d++) {
+    if (
+      combinedDevisableValues[k] === combinedDevisableValues[d] &&
+      !duplicateValues.includes(combinedDevisableValues[k])
+    ) {
+      duplicateValues.push(combinedDevisableValues[k]);
+    }
+  }
+}
+
+console.log(duplicateValues);
+let GCD = duplicateValues[0];
+
+for (let g = 0; g < duplicateValues.length; g++) {
+  if (duplicateValues[g] > GCD) {
+    GCD = duplicateValues[g];
+  }
+}
+
+console.log(GCD);
+*/
