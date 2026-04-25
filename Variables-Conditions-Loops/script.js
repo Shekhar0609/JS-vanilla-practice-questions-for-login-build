@@ -246,13 +246,11 @@ let a = 10,
 console.log(a, b);
 */
 
-
-
-
 //15.	Find Greatest Common Divisor (GCD)
+
 /*
-let firstNum = 99,
-  secondNum = 132,
+let firstNum = 234,
+  secondNum = 5698,
   devidasableValues = [],
   devidasableValues2 = [],
   nonDevidasableValues = [],
@@ -301,3 +299,99 @@ for (let g = 0; g < duplicateValues.length; g++) {
 
 console.log(GCD);
 */
+
+// 16.	Find LCM
+
+// formula of LCM(a,b)=(a*b)/GCD(a,b)
+
+/*
+let multiplyNum = firstNum * secondNum
+let previousAnsGCD = GCD
+
+let LCM = multiplyNum/previousAnsGCD
+
+console.log(LCM)
+*/
+
+// 17.	Power of number
+
+/*
+let a = 2
+let powerOf = -3
+
+let result = a**powerOf
+
+console.log(result)
+*/
+
+// 18.	Print multiplication table
+/*
+let size = 10;
+
+for (let i = 1; i <= size; i++) {
+  let row = "";
+  for (let j = 1; j <= size; j++) {
+    row += (i * j).toString().padStart(4);
+  }
+}
+
+console.log(row);
+*/
+
+//19.	Count even & odd digits
+/*
+let even = [];
+let odd = [];
+
+let evenCount = 0;
+let oddCount = 0;
+
+for (let i = 1; i <= 89; i++) {
+  if (i % 2 === 0) {
+    even.push(i);
+    evenCount++;
+  } else {
+    odd.push(i);
+    oddCount++;
+  }
+}
+
+console.log(even, odd, evenCount, oddCount);
+*/
+
+
+
+// 20.	Check perfect number
+
+
+let num = 6
+let sum = 0
+let divisors =[]
+
+for (let i=1; i<num; i++){
+if(num%i===0){
+divisors.push(i)
+sum+=i
+console.log(i)
+}
+}
+
+console.log(divisors, sum)
+
+
+if(sum === num){
+console.log(`${num} is a Perfect Number!`);
+console.log("Divisors:", divisors.join(" + "), "=", sum);
+} else {
+console.log(`${num} is not a perfect number.`);
+}
+
+
+
+
+
+
+
+
+
+
