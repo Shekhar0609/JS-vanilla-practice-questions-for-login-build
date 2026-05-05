@@ -81,5 +81,41 @@ oddCheck()
 console.log(evenNum, oddNum);
 */
 
-
 // 25.	Temperature converter
+/*
+let fahrenheitToCelsius = (fc) => {
+  return `${Number(((fc - 32) * 5) / 9).toFixed(2)}`;
+};
+
+let celsiusToFahrenheit = (cf) => {
+  return `${Number((cf * 9) / 5 + 32).toFixed(2)}`;
+};
+
+let kelvinToCelsius = (kc) => {
+  return `${Number(kc - 273.15).toFixed(2)}`;
+};
+
+let celsiusToKelvin = (ck) => {
+  return `${Number(ck + 273.15).toFixed(2)}`;
+};
+
+let kelvinToFahrenheit = (kf) => {
+  return `${Number(((kf - 273.15) * 9) / 5 + 32).toFixed(2)}`;
+};
+
+celsiusToFahrenheit(4);
+
+kelvinToCelsius(4);
+
+celsiusToKelvin(4);
+
+kelvinToFahrenheit(4);
+
+console.log(`fahrenheitToCelsius = ${fahrenheitToCelsius(4)},
+celsiusToFahrenheit = ${celsiusToFahrenheit(4)},
+kelvinToCelsius = ${kelvinToCelsius(4)},
+celsiusToKelvin = ${celsiusToKelvin(4)},
+kelvinToFahrenheit = ${kelvinToFahrenheit(4)}`);
+*/
+
+// 26.	Simple interest calculator
