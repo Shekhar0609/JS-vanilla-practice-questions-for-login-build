@@ -119,3 +119,14 @@ kelvinToFahrenheit = ${kelvinToFahrenheit(4)}`);
 */
 
 // 26.	Simple interest calculator
+
+//formula
+//Simple Interest=(Principle*Rate*Tenure)/100
+/*
+let simpleInterest = (p, r, t) => {
+  return (p * r * t) / 12 / 100;
+};
+
+simpleInterest(10000, 5, 24);
+console.log(simpleInterest(10000, 5, 2));
+*/
